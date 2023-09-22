@@ -68,6 +68,13 @@ body {
   transition: 0.5s;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
 .selected,
 .sidebar li:hover {
   background-color: var(--color-lightest);

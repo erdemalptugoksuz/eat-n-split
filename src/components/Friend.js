@@ -1,6 +1,6 @@
 import { Button } from ".";
 
-const Friend = ({ friend, onSelection, selectedFriend }) => {
+const Friend = ({ friend, onSelection, selectedFriend, onDelete }) => {
   const isSelected = selectedFriend?.id === friend.id;
 
   return (
@@ -23,6 +23,7 @@ const Friend = ({ friend, onSelection, selectedFriend }) => {
       <Button onClick={() => onSelection(friend)}>
         {isSelected ? "Close" : "Select"}
       </Button>
+      <Button onClick={() => onDelete(friend.id)}>Delete</Button>
     </li>
   );
 };

@@ -1,6 +1,6 @@
 import { Friend } from ".";
 
-const FriendsList = ({ friends, onSelection, selectedFriend }) => {
+const FriendsList = ({ friends, onSelection, selectedFriend, onDelete }) => {
   return (
     <ul>
       {friends.map((friend) => (
@@ -9,6 +9,7 @@ const FriendsList = ({ friends, onSelection, selectedFriend }) => {
           friend={friend}
           selectedFriend={selectedFriend}
           onSelection={onSelection}
+          onDelete={onDelete}
         />
       ))}
     </ul>
